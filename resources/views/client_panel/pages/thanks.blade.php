@@ -4,11 +4,11 @@
 
 @section('content')
 
-    <div class="bg-zinc-200 flex justify-center items-center w-full h-screen">
-        <div style="box-shadow: 1px 3px 5px 1px" class="relative bg-white overflow-hidden w-[60%] h-[60%] rounded-xl">
+    <div class="bg-zinc-200 flex justify-center md:items-center pt-10 md:pt-0 w-full h-screen px-4 md:px-0">
+        <div style="box-shadow: 1px 3px 5px 1px" class="relative bg-white overflow-hidden md:w-[60%] h-[60%] rounded-xl">
             <p class="text-5xl font-bold tracking-wider font-serif text-red-500 text-center py-5 pt-12">Thanks for Submission
             </p>
-            <p class="px-10 text-xl tracking-wider">{{ $message }} We have proceed your request. Our Team will reach you within 24 hour.
+            <p class="md:px-10 px-4 text-center md:text-left text-xl tracking-wider">{{ $message }} We have proceed your request. Our Team will reach you within 24 hour.
             </p>
             <p class="absolute bottom-4 text-center w-full font-semibold text-lg">Redirecting to product page in <span
                     id="timer">10</span> ms</p>
