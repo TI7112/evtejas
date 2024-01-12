@@ -1,0 +1,29 @@
+<ifModule mod_rewrite.c>
+
+    RewriteEngine on
+    RewriteBase /
+    RewriteRule ^$ public/index.php [L]
+    RewriteRule ^((?!public/).*)$ public/$l [L,NC]
+
+    # <ifModule mod_negotiation.c>
+    #     Options -MultiViews -Indexes
+    # </ifModule>
+
+    # RewriteEngine on
+s
+    # <!-- Handle Authorisation Header  -->
+
+    # RewriteCond %{HTTP:Authorisation} .
+    # RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorisation}]
+
+    # <!-- Redirect Trailing Slashes If Not A Folder -->
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_URI} (.+)/$
+    # RewriteCond ^ %1 [L,R=301]
+    
+    # <!-- Send Request To Front Controller -->
+    # RewriteCond %{REQUEST_FILENAME} !-d
+    # RewriteCond %{REQUEST_FILENAME} !-f
+    # RewriteCond ^ index.php [L]
+
+</ifModule>
