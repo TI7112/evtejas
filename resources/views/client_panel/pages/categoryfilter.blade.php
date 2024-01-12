@@ -10,9 +10,9 @@
                 <div class="container px-5 mx-auto">
                     <div class="flex justify-between">
                         <p class="text-4xl font-bold py-10 font-mono">Tejas Collections</p>
-                        <div class="flex gap-5 items-center">
+                        <div class="hidden md:flex gap-5 items-center">
                             <p class="text-sm md:text-xl font-bold pb-2 uppercase">Select Model</p>
-                            <select class="evcategory capitalize bg-zinc-900  outline-none border-2 p-2 text-xs md:text-lg rounded-lg font-bold" name="evcategory"
+                            <select class="evcategory capitalize bg-zinc-900 outline-none border-2 p-2 text-xs md:text-lg rounded-lg font-bold" name="evcategory"
                                 >
                                 @foreach ($category as $value)
                                     @if ($product[0]->category == $value->category)

@@ -13,29 +13,64 @@ class clientController extends Controller
 
     public function home(Request $request)
     {
-        return view('client_panel.pages.home');
+        $menu_category = Product::select('category')->distinct('category')->get();
+        return view('client_panel.pages.home' , compact('menu_category'));
     }
 
     public function store(Request $request)
     {
+        $menu_category = Product::select('category')->distinct('category')->get();
         $product = Product::orderBy('id', "desc")->paginate(15);
         $category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.store', compact('product', 'category'));
+        return view('client_panel.pages.store', compact('product', 'category' , 'menu_category'));
     }
 
     public function product(Request $request, $slug)
     {
-
+        $menu_category = Product::select('category')->distinct('category')->get();
         $product = Product::where('slug', "$slug")->first();
         $relatedproduct = Product::Where('category', "$product->category")->get();
-        return view('client_panel.pages.product', compact('product', 'relatedproduct'));
+        return view('client_panel.pages.product', compact('product', 'relatedproduct' , 'menu_category'));
     }
 
     public function categoryfilter(Request $request, $slug)
     {
+        $menu_category = Product::select('category')->distinct('category')->get();
         $product = Product::where('category', "$slug")->paginate(15);
         $category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.categoryfilter', compact('product', 'category'));
+        return view('client_panel.pages.categoryfilter', compact('product', 'category' , 'menu_category'));
+    }
+
+    
+    public function about(Request $request)
+    {
+        $menu_category = Product::select('category')->distinct('category')->get();
+        return view('client_panel.pages.about');
+    }
+
+    public function thanks(Request $request, $slug)
+    {
+        $menu_category = Product::select('category')->distinct('category')->get();
+        if ($slug != 'contact') {
+            $product = Product::where('slug', "$slug")->first();
+            $message = "Thanks for having interest in $product->title .";
+            return view('client_panel.pages.thanks', compact('message' , 'menu_category'));
+        } else {
+            $message = "Thanks for contacting us.";
+            return view('client_panel.pages.thanks', compact('message' , 'menu_category'));
+        }
+    }
+
+    public function contact(Request $request)
+    {
+        $menu_category = Product::select('category')->distinct('category')->get();
+        return view('client_panel.pages.contact' , compact('menu_category'));
+    }
+
+    public function services(Request $request)
+    {
+        $menu_category = Product::select('category')->distinct('category')->get();
+        return view('client_panel.pages.services' , compact('menu_category'));
     }
 
     public function enquire(Request $request)
@@ -54,36 +89,6 @@ class clientController extends Controller
         $enquiry->save();
 
         return redirect("/thanks/$product->slug");
-    }
-
-    public function about(Request $request)
-    {
-
-        return view('client_panel.pages.about');
-    }
-
-    public function thanks(Request $request, $slug)
-    {
-        if ($slug != 'contact') {
-            $product = Product::where('slug', "$slug")->first();
-            $message = "Thanks for having interest in $product->title .";
-            return view('client_panel.pages.thanks', compact('message'));
-        } else {
-            $message = "Thanks for contacting us.";
-            return view('client_panel.pages.thanks', compact('message'));
-        }
-    }
-
-    public function contact(Request $request)
-    {
-
-        return view('client_panel.pages.contact');
-    }
-
-    public function services(Request $request)
-    {
-
-        return view('client_panel.pages.services');
     }
 
     public function get_in_touch(Request $request)
@@ -111,14 +116,14 @@ class clientController extends Controller
     //     $category = Category::all();
     //     $cat = Category::where('slug' , "$slug")->first();
     //     $product = Product::where('category' , $cat->id)->orderBy('created_at' , "desc")->paginate(8);
-    //     return view('client_panel.pages.categoryfilter' , compact('product' , 'category' , 'cat'));
+    //     return view('client_panel.pages.categoryfilter' , compact('product' , 'category' , 'cat' , 'menu_category'));
     // }
 
     // public function product(Request $request , $slug){
     //     $category = Category::all();
     //     $product = Product::where('slug' , "$slug")->first();
     //     $productsuggestion = Product::where('category' , $product->category)->paginate(4);
-    //     return view('client_panel.pages.product' , compact('product' , 'category' , 'productsuggestion' ));
+    //     return view('client_panel.pages.product' , compact('product' , 'category' , 'productsuggestion'  , 'menu_category'));
     // }
 
 }

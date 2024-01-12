@@ -37,26 +37,34 @@
                         <p class="text-2xl text-white px-5 pt-6">Quicklinks</p>
                         <div class="text-zinc-300 px-8 py-2 flex flex-col">
                             <a href="/" class="text-lg hover:underline">Home</a>
-                            <a href="{{route('about')}}" class="text-lg hover:underline">Mission</a>
-                            <a href="{{route('services')}}" class="text-lg hover:underline">Services</a>
-                            <a href="{{route('contact')}}" class="text-lg hover:underline">Contact</a>
-                            <a href="{{route('store')}}" class="text-lg hover:underline">More on EV</a>
+                            <a href="{{ route('about') }}" class="text-lg hover:underline">Mission</a>
+                            <a href="{{ route('services') }}" class="text-lg hover:underline">Services</a>
+                            <a href="{{ route('contact') }}" class="text-lg hover:underline">Contact</a>
+                            <a href="{{ route('store') }}" class="text-lg hover:underline">More on EV</a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-2xl text-white px-5 pt-6">Category</p>
+                        <div class="text-zinc-300 px-8 py-2 flex flex-col">
+                            @foreach ($menu_category as $value)
+                                <a href="/category/{{$value->category}}" class="text-lg hover:underline capitalize ">{{$value->category}}</a>
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex justify-center w-full lg:w-auto">
                 <a href="{{ route('home') }}">
-                    <img class="w-24" src="{{ asset('public/assets/static/logo.png')}}" alt="">
+                    <img class="w-24" src="{{ asset('assets/static/logo.png') }}" alt="">
                 </a>
             </div>
         </div>
         <div class="hidden w-full justify-end md:flex text-zinc-300 font-semibold items-center gap-5">
             <a class="hover:underline hover:text-white duration-500" href="/">Home</a>
-            <a class="hover:underline hover:text-white duration-500" href="{{route('about')}}">Mission</a>
-            <a class="hover:underline hover:text-white duration-500" href="{{route('services')}}">Services</a>
-            <a class="hover:underline hover:text-white duration-500" href="{{route('contact')}}">Tech Support</a>
-            <a class="hover:underline hover:text-white duration-500" href="{{route('store')}}">More on EV</a>
+            <a class="hover:underline hover:text-white duration-500" href="{{ route('about') }}">Mission</a>
+            <a class="hover:underline hover:text-white duration-500" href="{{ route('services') }}">Services</a>
+            <a class="hover:underline hover:text-white duration-500" href="{{ route('contact') }}">Tech Support</a>
+            <a class="hover:underline hover:text-white duration-500" href="{{ route('store') }}">More on EV</a>
         </div>
     </div>
     {{-- body  --}}
@@ -65,9 +73,10 @@
     </div>
     {{-- footer  --}}
     <div class="">
-<div class="flex justify-center">
-    <img class="md:w-[70%] grayscale h-60" src="https://www.evhero.co.uk/wp-content/uploads/2018/11/New-eco-illo@2x.png" alt="">
-</div>
+        <div class="flex justify-center">
+            <img class="md:w-[70%] grayscale h-60"
+                src="https://www.evhero.co.uk/wp-content/uploads/2018/11/New-eco-illo@2x.png" alt="">
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-5 px-4 md:px-20 bg-zinc-900 py-4 md:py-8 text-white">
             <div class="">
                 <p class="text-2xl font-semibold font-mono uppercase">ABOUT US</p>
@@ -127,7 +136,6 @@
         </div>
     </div>
     <script>
-        
         AOS.init();
         const handlemobilemenu = () => {
             if (mobilemenu.classList.contains('translate-x-0')) {
