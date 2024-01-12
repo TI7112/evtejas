@@ -8,7 +8,7 @@
         <img class="w-full" src="{{ asset('assets/static/services_image_1.png') }}" alt="">
     </div>
     <div class="w-full flex flex-col items-center">
-        <div class="flex md:w-[80%] px-4 md:px-0 bg-white items-center md:h-[70vh]">
+        <div class="flex md:w-[80%]    px-4 md:px-0 bg-white items-center md:h-[70vh]">
             <div class="md:w-1/2">
                 <p data-aos="fade-up" class="text-2xl md:text-4xl font-bold tracking-wider uppercase pt-4 md:py-4"><span
                         class="text-red-500">Best</span> Ev service provider</p>

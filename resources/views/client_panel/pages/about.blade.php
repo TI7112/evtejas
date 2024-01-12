@@ -183,7 +183,7 @@
         <div class="md:px-32 py-20 px-4 flex flex-col md:gap-20 gap-10">
             <div data-aos="fade-up" class="md:flex">
                 <div class="md:w-1/2 flex items-center">
-                    <img class="w-full" src="{{ asset('assets/static/Scooty Banner.jpg') }}" alt="">
+                    <img class="w-full" src="{{ asset('assets/static/safety_service.png') }}" alt="">
                 </div>
                 <div data-aos="fade-in" class="md:w-1/2 px-5">
                     <p class="text-xl md:text-3xl font-bold">TEJAS EV CORP: EXPANDING HORIZONS. SHAPING TOMORROW</p>
@@ -213,7 +213,7 @@
             </div>
             <div data-aos="fade-up" class="md:flex flex-row-reverse">
                 <div class="md:w-1/2 flex items-center">
-                    <img class="w-full" src="{{ asset('assets/static/Scooty Banner.jpg') }}" alt="">
+                    <img class="w-full" src="{{ asset('assets/static/safety_service.png') }}" alt="">
                 </div>
                 <div class="md:w-1/2 px-5">
                     <p class="text-xl md:text-3xl font-bold">TEJAS EV CORP: EXPANDING HORIZONS. SHAPING TOMORROW</p>
@@ -243,7 +243,7 @@
             </div>
             <div data-aos="fade-up" class="md:flex ">
                 <div class="md:w-1/2 flex items-center">
-                    <img class="w-full" src="{{ asset('assets/static/Scooty Banner.jpg') }}" alt="">
+                    <img class="w-full" src="{{ asset('assets/static/safety_service.png') }}" alt="">
                 </div>
                 <div data-aos="fade-in" class="md:w-1/2 px-5">
                     <p class="text-xl md:text-3xl font-bold">TEJAS EV CORP: EXPANDING HORIZONS. SHAPING TOMORROW</p>
