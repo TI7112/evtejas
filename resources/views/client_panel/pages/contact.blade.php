@@ -46,16 +46,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="md:w-[50%] flex flex-col px-2 pt-10 md:py-0 pb-2 md:px-10 gap-5 bg-red-500 text-white justify-center">
+                    <form method="POST" action="{{ route('get_in_touch')}}" class="md:w-[50%] flex flex-col px-2 pt-10 md:py-0 pb-2 md:px-10 gap-5 bg-red-500 text-black justify-center">
                         <p class="text-3xl font-semibold">Get in Touch</p>
-                        <input type="text" name="name" placeholder="Enter your name....." id="name" class="bg-zinc-white border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
-                        <input type="text" name="email" placeholder="Enter your email....." id="email" class="bg-zinc-white border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
-                        <input type="text" name="subject" placeholder="Enter your subject....." id="subject" class="bg-zinc-white border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
-                        <textarea name="message" id="message" placeholder="Enter your concern" cols="30" rows="10" class="bg-zinc-white border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none"></textarea>
+                        @csrf
+                        <input type="text" name="name" placeholder="Enter your name....." id="name" class="bg-zinc-100 border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
+                        <input type="text" name="email" placeholder="Enter your email....." id="email" class="bg-zinc-100 border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
+                        <input type="text" name="phone" placeholder="Enter your contact number....." id="phone" class="bg-zinc-100 border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
+                        <input type="text" name="subject" placeholder="Enter your subject....." id="subject" class="bg-zinc-100 border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none">
+                        <textarea name="message" id="message" placeholder="Enter your concern" cols="30" rows="10" class="bg-zinc-100 border-2 duration-500 focus:border-black px-2 py-1 rounded outline-none"></textarea>
                         <div class="flex justify-end">
-                            <button type="submit" class="bg-red-600 hover:bg-red-700 duration-500 py-1 px-5 w-fit rounded font-semibold">Submit</button>
+                            <button type="submit" class="bg-red-600 hover:bg-red-700 duration-500 py-1 px-5 w-fit rounded font-semibold text-white">Submit</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 

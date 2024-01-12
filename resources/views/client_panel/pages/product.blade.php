@@ -298,6 +298,11 @@
                     </div>
                 </div>
                 <div class="w-full">
+                    <p class="text-sm font-semibold p-0.5">Phone</p>
+                    <input required type="text" name="phone" placeholder="Enter your contact number....." id="phone"
+                        class="w-full border-2 duration-500 focus:border-red-500 px-2 py-2 rounded outline-none">
+                </div>
+                <div class="w-full">
                     <p class="text-sm font-semibold p-0.5">Model</p>
                     <input required type="text" name="model" readonly value="{{ $product->title }}"
                         placeholder="Enter your model....." id="model"

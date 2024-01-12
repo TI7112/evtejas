@@ -21,12 +21,13 @@ Route::get('/store', [clientController::class, "store"])->name('store');
 Route::get('/about', [clientController::class, "about"])->name('about');
 Route::get('/services', [clientController::class, "services"])->name('services');
 Route::get('/contact', [clientController::class, "contact"])->name('contact');
-Route::post('/get-in-touch', [clientController::class, "get_in_touch"])->name('get_in_touch');
 Route::get('/product/{slug}', [clientController::class, "product"])->name('product');
 Route::get('/category/{slug}', [clientController::class, "categoryfilter"])->name('categoryfilter');
+Route::get('/thanks/{slug}', [clientController::class, "thanks"])->name('thanks');
 Route::get('/developer', [clientController::class, "developer"])->name('developer');
 
 
+Route::post('/get-in-touch', [clientController::class, "get_in_touch"])->name('get_in_touch');
 Route::post('/enquire', [clientController::class, "enquire"])->name('enquire');
 
 
