@@ -82,14 +82,14 @@
                 <p class="text-2xl font-semibold font-mono uppercase">ABOUT US</p>
                 <div class="flex flex-col gap-1 pt-3 text-sm px-2">
                     <div class="flex items-start gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="red" class="w-10 h-8" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="red" class="w-6 h-6" viewBox="0 0 16 16">
                             <path
                                 d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                         </svg>
                         <a class="hover:underline hover:text-red-500 duration-500"
                             href="https://maps.app.goo.gl/TXekDoftvV6DywsD6.">
-                            <p> Kamakhya Group, 4th Floor, TC 34,V/2, Levana Cyber Tower, Vibhuti Khand, Gomti Nagar,
-                                Lucknow, Uttar Pradesh 226010.</p>
+                            <p> 23, Panchkuia Road, R.K. Ashram Marg, <br>
+                                New Delhi, Delhi - 110001 </p>
                         </a>
                     </div>
                     <div class="flex items-start gap-2">

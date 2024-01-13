@@ -45,7 +45,7 @@ class clientController extends Controller
     public function about(Request $request)
     {
         $menu_category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.about');
+        return view('client_panel.pages.about' , compact('menu_category'));
     }
 
     public function thanks(Request $request, $slug)

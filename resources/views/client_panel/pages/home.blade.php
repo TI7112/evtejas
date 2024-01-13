@@ -3,8 +3,26 @@
 @section('title', 'Home')
 
 @section('content')
-    
-    <div class="bg-[url('assets/static/background.webp')] bg-fixed bg-cover w-full h-screen">
+
+    {{-- <div class="hidden md:flex">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-full bg-red-500">
+                    <img class="w-full" src="{{ asset('assets/static/homepage_banner_1.png') }}" alt="">
+                </div>
+                <div class="swiper-slide w-full bg-red-500">
+                    <img class="w-full" src="{{ asset('assets/static/homepage_banner_2.png') }}" alt="">
+                </div>
+
+            </div>
+            <div class="swiper-button-next hidden md:block"></div>
+            <div class="swiper-button-prev hidden md:block"></div>
+            <div class="swiper-pagination md:hidden"></div>
+        </div>
+    </div> --}}
+
+
+    <div class="bg-[url('assets/static/background.webp')] bg-fixed bg-cover w-full min-h-screen">
         <div
             class="bg-[rgba(0,0,0,0.7)] w-full gap-1 py-12 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
             <p class="md:text-6xl text-3xl font-bold text-center">TEJAS ELECTRIC <br> VEHICLES</p>
@@ -26,7 +44,15 @@
                         class="w-8 h-8 border rounded pt-1 border-red-500" viewBox="0 0 24 24">
                         <path d="M3 12H7V21H3V12ZM17 8H21V21H17V8ZM10 2H14V21H10V2Z"></path>
                     </svg>
-                    <a class="text-xl text-white font-bold" href="">No Registration</a>
+                    <a class="text-xl text-white font-bold" href="">High Speed</a>
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="flex flex-col items-center rounded-xl gap-1 text-red-500 text-center border border-zinc-500 px-10 py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="w-8 h-8 border rounded pt-1 border-red-500" viewBox="0 0 24 24">
+                        <path d="M3 12H7V21H3V12ZM17 8H21V21H17V8ZM10 2H14V21H10V2Z"></path>
+                    </svg>
+                    <a class="text-xl text-white font-bold" href="">Low Speed</a>
                 </div>
                 <div data-aos="zoom-in-up"
                     class="flex flex-col items-center rounded-xl gap-1 text-red-500 text-center border border-zinc-500 px-10 py-3">
@@ -107,14 +133,26 @@
                     and the
                     global community.</p>
                 <ul class="list-disc px-7 text-sm md:text-base flex flex-col gap-2">
-                    <li>Our business isn't just about fabricating a pious client base, but also about building a better,
-                        cleaner, and greener tomorrow for the generations to come. We do this by upholding high ethical
-                        standards and ensuring top-notch product quality.</li>
-                    <li>As an ambitious player in India's evolving E-bike market, we wish to be the touchstone of affordable
-                        eco-friendly technology.
+                    <li>Tejas is a subsidiary of Kamakhya Worldwide Technology Private Limited. Based out in Lucknow, the
+                        capital
+                        city of Uttar Pradesh, the company was incorporated in 2019. However, the organization introduced
+                        Tejas
+                        a different unit wholly dedicated to Electronics Home Appliances and greener Energy powered
+                        vehicles.</li>
+                    <li>Driven by our vision of sustainability, we have forayed into the E-Bike Market Segment. Within a
+                        shorter time
+                        span, we have emerged as one of the ambitious players in this rapidly booming market of Electric
+                        scooters.
+                        Adhering to ethical standards, current market trends & industry norms, we have been setting a
+                        benchmark
+                        in this industry
                     </li>
-                    <li>Being recognized for our work real firms that we are on the right path, guided by our core values of
-                        purpose, performance, and people-centric approach.
+                    <li>Tejas is one of India’s most reliable electric vehicles manufacturing companies. The company is
+                        relentlessly
+                        working to align with the Indian Government’s ‘Make in India’ initiative of ‘Enhancing Lives through
+                        I
+                        nnovations’ & technological advancements in the country. When it comes to quality assurance,
+                        we are ISO 9001:2015 certified company, so you can completely count on us!
                     </li>
                 </ul>
                 <p class="py-2 pt-5 md:text-xl ">We have a wide network of EXPERT Technicians & and home services that you
@@ -122,11 +160,9 @@
                     easily get the services and maintenance for your ELECTRIC VEHICLE nearby you.</p>
             </div>
             <div data-aos="zoom-in-up" class="md:w-[35%] flex items-center">
-                <img class="w-full rounded-xl" src="{{ asset('assets/static/about.png') }}" alt="">
+                <img class="w-full rounded-xl" src="{{ asset('assets/static/about.webp') }}" alt="">
             </div>
-
         </div>
-
 
         <div class="">
             <div class="swiper mySwiper py-10">
@@ -137,7 +173,7 @@
                     <div class="swiper-slide w-full bg-red-500">
                         <img class="w-full" src="{{ asset('assets/static/homepage_banner_2.png') }}" alt="">
                     </div>
-
+    
                 </div>
                 <div class="swiper-button-next hidden md:block"></div>
                 <div class="swiper-button-prev hidden md:block"></div>
