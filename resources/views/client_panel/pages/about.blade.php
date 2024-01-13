@@ -11,7 +11,8 @@
         </div>
     </div>
     <div class="py-4 md:py-20">
-        <p data-aos="fade-up" class="text-2xl md:text-5xl md:text-center font-bold md:pt-10 px-4 md:px-0">Manufacturing Happiness Since 2019</p>
+        <p data-aos="fade-up" class="text-2xl md:text-5xl md:text-center font-bold md:pt-10 px-4 md:px-0">Manufacturing
+            Happiness Since 2019</p>
         <p data-aos="fade-up" class="text-lg px-3 md:text-xl py-1 md:text-center pb-4">With Innovation at its core, Tejas EV
             continues to
             provide
@@ -122,7 +123,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 md:px-32 px-4 md:pt-20 md:pb-12 py-10 gap-8 md:gap-5">
             <div data-aos="zoom-in-up" class="">
                 <img src="{{ asset('assets/static/create.png') }}" alt="">
-                <p class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">Create</p>
+                <p
+                    class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                    Create</p>
                 <ul class="text-lg text-slate-800 list-disc py-2 md:py-8 p-8 md:text-xl flex flex-col gap-3">
                     <li>Re-define mobility through the creation of a mobility roadmap.</li>
                     <li>Set best practice and benchmarks for the industry.</li>
@@ -130,7 +133,9 @@
             </div>
             <div data-aos="zoom-in-up" class="">
                 <img src="{{ asset('assets/static/collaborate-05.png') }}" alt="">
-                <p class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">COLLABORATE</p>
+                <p
+                    class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                    COLLABORATE</p>
                 <ul class="text-lg text-slate-800 list-disc py-2 md:py-8 p-8 md:text-xl flex flex-col gap-3">
                     <li>Leverage partnerships and exhibit Teamwork.</li>
                     <li>Co-create solutions that benefit the community, while caring for both the internal and external
@@ -139,7 +144,9 @@
             </div>
             <div data-aos="zoom-in-up" class="">
                 <img src="{{ asset('assets/static/inspire.png') }}" alt="">
-                <p class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">INSPIRE</p>
+                <p
+                    class="text-2xl text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                    INSPIRE</p>
                 <ul class="text-lg text-slate-800 list-disc py-2 md:py-8 p-8 md:text-xl flex flex-col gap-3">
                     <li>Move forward with purpose.</li>
                     <li>Inspire our colleagues, customers and communities.</li>
@@ -155,52 +162,70 @@
             <div class="w-[14%] md:w-[42%] h-[2px] bg-zinc-400"></div>
         </div>
         <div class="flex flex-col items-center py-10 md:py-20">
-            <p class="md:text-lg md:text-center md:w-[60%] w-[90%] md:pb-20 pb-5 font-semibold">Under the skilled stewardship of some brilliant minds, <span class="text-red-500 font-bold">Tejas- Kamakhya Group</span> is 
-                witnessing rapid growth and has crossed several milestones. Consequently, the 
-                company is expected to reach new heights in the future. In a nutshell, if we say, the 
+            <p class="md:text-lg md:text-center md:w-[60%] w-[90%] md:pb-20 pb-5 font-semibold">Under the skilled
+                stewardship of some brilliant minds, <span class="text-red-500 font-bold">Tejas- Kamakhya Group</span> is
+                witnessing rapid growth and has crossed several milestones. Consequently, the
+                company is expected to reach new heights in the future. In a nutshell, if we say, the
                 future of Kamakhya Group is in safe hands!</p>
-            <div class="md:w-[70%] w-[90%] flex flex-col md:gap-16 gap-5">
-                <div data-aos="zoom-in-up" class="flex flex-col items-center md:items-auto md:flex-row md:h-40 gap-5 md:gap-10">
+            <div class="md:w-[70%] w-[90%] flex flex-col md:gap-10 gap-5">
+                <div data-aos="zoom-in-up"
+                    class="flex flex-col items-center md:items-start md:flex-row gap-5 md:gap-10">
                     <div class="rounded-xl overflow-hidden border-2 border-red-500 md:w-[25%]">
-                        <img class="w-full h-full" src="{{ asset('assets/static/inspire.png') }}" alt="">
+                        <img class="w-full h-full" src="{{ asset('assets/static/vivek_sir.png') }}" alt="">
                     </div>
                     <div class="md:w-[60%] w-[95%] flex flex-col justify-between h-full">
-                        <p class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500"><span class="text-red-500 font-bold">FOUNDER & MANAGING DIRECTOR (MD)</span> – <br class="md:hidden"> Mr. Vivek Kumar</p>
-                        <p class="text-lg py-2">Vivek Mishra, Managing Director at Kamakhya Worldwide Business Private 
-                            Limited, has led the organization for over two decades, focusing on quality, 
+                        <p
+                            class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                            <span class="text-red-500 font-bold">FOUNDER & MANAGING DIRECTOR (MD)</span> – <br
+                                class="md:hidden"> Mr. Vivek Kumar</p>
+                        <p class="text-lg py-5">Vivek Mishra, Managing Director at Kamakhya Worldwide Business Private
+                            Limited, has led the organization for over two decades, focusing on quality,
                             customer experience, and expanding the product/service portfolio of Tejas.</p>
                     </div>
                 </div>
-              <div data-aos="zoom-in-up" class="flex flex-col items-center md:items-auto md:flex-row md:h-40 gap-5 md:gap-10">
+                <div data-aos="zoom-in-up"
+                    class="flex flex-col items-center md:items-start md:flex-row gap-5 md:gap-10">
                     <div class="rounded-xl overflow-hidden border-2 border-red-500 md:w-[25%]">
-                        <img class="w-full h-full" src="{{ asset('assets/static/inspire.png') }}" alt="">
+                        <img class="w-full h-full" src="{{ asset('assets/static/vivek_sir.png') }}" alt="">
                     </div>
                     <div class="md:w-[60%] w-[95%] flex flex-col justify-between h-full">
-                        <p class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500"><span class="text-red-500 font-bold">CO-FOUNDER & CEO </span> - <br class="md:hidden"> Mrs. Archana Mishra</p>
-                        <p class="text-lg py-2">Mrs. Archana Mishra, Co-Founder & CEO of Kamakhya Worldwide Business 
-                            Limited, manages the Electronics Consumable Goods and Electric Vehicles 
+                        <p
+                            class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                            <span class="text-red-500 font-bold">CO-FOUNDER & CEO </span> - <br class="md:hidden"> Mrs.
+                            Archana Mishra</p>
+                        <p class="text-lg py-5">Mrs. Archana Mishra, Co-Founder & CEO of Kamakhya Worldwide Business
+                            Limited, manages the Electronics Consumable Goods and Electric Vehicles
                             unit and is crucial in executing organizational operations</p>
                     </div>
                 </div>
-              <div data-aos="zoom-in-up" class="flex flex-col items-center md:items-auto md:flex-row md:h-40 gap-5 md:gap-10">
+                <div data-aos="zoom-in-up"
+                    class="flex flex-col items-center md:items-start md:flex-row gap-5 md:gap-10">
                     <div class="rounded-xl overflow-hidden border-2 border-red-500 md:w-[25%]">
-                        <img class="w-full h-full" src="{{ asset('assets/static/inspire.png') }}" alt="">
+                        <img class="w-full h-full" src="{{ asset('assets/static/vivek_sir.png') }}" alt="">
                     </div>
                     <div class="md:w-[60%] w-[95%] flex flex-col justify-between h-full">
-                        <p class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500"><span class="text-red-500 font-bold">BUSINESS HEAD</span> – <br class="md:hidden"> Mr. Ashish Gupta</p>
-                        <p class="text-lg py-2">Ashish Gupta, with industry experience, has been appointed as Business 
-                            Head at Kamakhya Group, tasked with expanding the company's customer base and enhancing customer experience</p>
+                        <p
+                            class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                            <span class="text-red-500 font-bold">BUSINESS HEAD</span> – <br class="md:hidden"> Mr. Ashish
+                            Gupta</p>
+                        <p class="text-lg py-5">Ashish Gupta, with industry experience, has been appointed as Business
+                            Head at Kamakhya Group, tasked with expanding the company's customer base and enhancing customer
+                            experience</p>
                     </div>
                 </div>
-              <div data-aos="zoom-in-up" class="flex flex-col items-center md:items-auto md:flex-row md:h-40 gap-5 md:gap-10">
+                <div data-aos="zoom-in-up"
+                    class="flex flex-col items-center md:items-start md:flex-row gap-5 md:gap-10">
                     <div class="rounded-xl overflow-hidden border-2 border-red-500 md:w-[25%]">
-                        <img class="w-full h-full" src="{{ asset('assets/static/inspire.png') }}" alt="">
+                        <img class="w-full h-full" src="{{ asset('assets/static/vivek_sir.png') }}" alt="">
                     </div>
                     <div class="md:w-[60%] w-[95%] flex flex-col justify-between h-full">
-                        <p class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500"><span class="text-red-500 font-bold">CHAIRMAN</span> - <br class="md:hidden"> Mr. Sunil Kumar</p>
-                        <p class="text-lg py-2">Mr. Sunil Kumar is the chairman of Kamakhya Worldwide Business Pvt. Ltd. 
-                            Under his tactical and visionary guidance, the future plans of the 
-                            organization are taken into light. His futuristic strategies and guidance 
+                        <p
+                            class="text-2xl md:text-3xl font-semibold md:py-2 pt-2 w-fit uppercase border-b-2 border-red-500">
+                            <span class="text-red-500 font-bold">CHAIRMAN</span> - <br class="md:hidden"> Mr. Sunil Kumar
+                        </p>
+                        <p class="text-lg py-5">Mr. Sunil Kumar is the chairman of Kamakhya Worldwide Business Pvt. Ltd.
+                            Under his tactical and visionary guidance, the future plans of the
+                            organization are taken into light. His futuristic strategies and guidance
                             are nurturing almost every unit of the company.</p>
                     </div>
                 </div>
