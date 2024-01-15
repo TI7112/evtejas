@@ -31,6 +31,7 @@ return new class extends Migration
             $table->foreign('product_id')->references('id')->on('tbl_product')->cascadeOnUpdate();
             $table->text("battery")->nullable();
             $table->text("motor")->nullable();
+            $table->text("speed")->nullable();
             $table->text("capacity")->nullable();
             $table->text("range")->nullable();
             $table->text("charging_time")->nullable();
