@@ -11,9 +11,18 @@ class Product extends Model
     protected $table = "tbl_product";
     protected $primaryKey = "id";
 
-    protected $with = ['getFeatures'];
+    protected $with = ['getFeatures', 'getCategory', 'getModel'];
 
-    public function getFeatures(){
-        return $this->belongsTo(Feature::class , 'id' , 'product_id');
+    public function getFeatures()
+    {
+        return $this->belongsTo(Feature::class, 'id', 'product_id');
+    }
+    public function getCategory()
+    {
+        return $this->belongsTo(Category::class, 'category', 'id');
+    }
+    public function getModel()
+    {
+        return $this->belongsTo(ProductModel::class, 'model', 'id');
     }
 }

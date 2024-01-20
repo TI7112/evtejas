@@ -4,28 +4,28 @@
 
 @section('content')
 
-    {{-- <div class="hidden md:flex">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide w-full bg-red-500">
-                    <img class="w-full" src="{{ asset('assets/static/homepage_banner_1.png') }}" alt="">
-                </div>
-                <div class="swiper-slide w-full bg-red-500">
-                    <img class="w-full" src="{{ asset('assets/static/homepage_banner_2.png') }}" alt="">
-                </div>
 
-            </div>
-            <div class="swiper-button-next hidden md:block"></div>
-            <div class="swiper-button-prev hidden md:block"></div>
-            <div class="swiper-pagination md:hidden"></div>
-        </div>
-    </div> --}}
+    <!--<div class="hidden md:flex">-->
+    <!--    <div class="swiper mySwiper">-->
+    <!--        <div class="swiper-wrapper">-->
+    <!--            <div class="swiper-slide w-full bg-red-500">-->
+    <!--                <img class="w-full" src="{{ asset('assets/static/homepage_banner_1.png') }}" alt="">-->
+    <!--            </div>-->
+    <!--            <div class="swiper-slide w-full bg-red-500">-->
+    <!--                <img class="w-full" src="{{ asset('assets/static/homepage_banner_2.png') }}" alt="">-->
+    <!--            </div>-->
 
-
+    <!--        </div>-->
+    <!--        <div class="swiper-button-next hidden md:block"></div>-->
+    <!--        <div class="swiper-button-prev hidden md:block"></div>-->
+    <!--        <div class="swiper-pagination md:hidden"></div>-->
+    <!--    </div>-->
+    <!--</div>-->
     <div class="bg-[url('assets/static/background.webp')] bg-fixed bg-cover w-full min-h-screen">
         <div
-            class="bg-[rgba(0,0,0,0.7)] w-full gap-1 py-12 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
-            <p class="md:text-6xl text-3xl font-bold text-center">TEJAS ELECTRIC <br> VEHICLES</p>
+            class="bg-[rgba(0,0,0,0.7)] w-full gap-1 pt-32 md:pt-12 py-12 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
+            <img data-aos="fade-up" class="md:w-96 w-60" src="{{ asset('assets/static/logo_white.png')}}" alt="">
+            <p class="md:text-6xl text-3xl font-bold text-center">ELECTRIC VEHICLES</p>
             <p class="md:text-2xl text-sm font-">Safety | Power | Comfort</p>
             <p class="md:text-2xl text-sm font-bold text-red-500">Best Range with Comfort Ride in Slick Design</p>
 
@@ -125,47 +125,49 @@
 
         {{-- About us  --}}
 
-        <p class="text-2xl font-bold px-4 py-5 md:hidden">About Us</p>
-        <div id="about" class="flex flex-col-reverse md:flex-row px-4 gap-10 md:py-20 justify-center">
-            <div data-aos="fade-right" class="md:w-[45%] md:py-4 px-3 md:px-0">
-                <p class="text-4xl font-bold hidden md:block">About Us</p>
-                <p class="md:py-2 pb-5 md:pt-5 md:text-xl">At Tejas, we're dedicated to delivering value to our customers
-                    and the
-                    global community.</p>
-                <ul class="list-disc px-7 text-sm md:text-base flex flex-col gap-2">
-                    <li>Tejas is a subsidiary of Kamakhya Worldwide Technology Private Limited. Based out in Lucknow, the
-                        capital
-                        city of Uttar Pradesh, the company was incorporated in 2019. However, the organization introduced
-                        Tejas
-                        a different unit wholly dedicated to Electronics Home Appliances and greener Energy powered
-                        vehicles.</li>
-                    <li>Driven by our vision of sustainability, we have forayed into the E-Bike Market Segment. Within a
-                        shorter time
-                        span, we have emerged as one of the ambitious players in this rapidly booming market of Electric
-                        scooters.
-                        Adhering to ethical standards, current market trends & industry norms, we have been setting a
-                        benchmark
-                        in this industry
-                    </li>
-                    <li>Tejas is one of India’s most reliable electric vehicles manufacturing companies. The company is
-                        relentlessly
-                        working to align with the Indian Government’s ‘Make in India’ initiative of ‘Enhancing Lives through
-                        I
-                        nnovations’ & technological advancements in the country. When it comes to quality assurance,
-                        we are ISO 9001:2015 certified company, so you can completely count on us!
-                    </li>
-                </ul>
-                <p class="py-2 pt-5 md:text-xl ">We have a wide network of EXPERT Technicians & and home services that you
-                    will
-                    easily get the services and maintenance for your ELECTRIC VEHICLE nearby you.</p>
-            </div>
-            <div data-aos="zoom-in-up" class="md:w-[35%] flex items-center">
-                <img class="w-full rounded-xl" src="{{ asset('assets/static/about.webp') }}" alt="">
-            </div>
-        </div>
+        <!--<p class="text-2xl font-bold px-4 py-5 md:hidden">About Us</p>-->
+        <!--<div id="about" class="flex flex-col-reverse md:flex-row px-4 gap-10 md:py-20 justify-center">-->
+        <!--    <div data-aos="fade-right" class="md:w-[45%] md:py-4 px-3 md:px-0">-->
+        <!--        <p class="text-4xl font-bold hidden md:block">About Us</p>-->
+        <!--        <p class="md:py-2 pb-5 md:pt-5 md:text-xl">At Tejas, we're dedicated to delivering value to our customers-->
+        <!--            and the-->
+        <!--            global community.</p>-->
+        <!--        <ul class="list-disc px-7 text-sm md:text-base flex flex-col gap-2">-->
+        <!--           <li>Tejas is a subsidiary of Kamakhya Worldwide Technology Private Limited. Based out in Lucknow, the-->
+        <!--                capital-->
+        <!--                city of Uttar Pradesh, the company was incorporated in 2019. However, the organization introduced-->
+        <!--                Tejas-->
+        <!--                a different unit wholly dedicated to Electronics Home Appliances and greener Energy powered-->
+        <!--                vehicles.</li>-->
+        <!--            <li>Driven by our vision of sustainability, we have forayed into the E-Bike Market Segment. Within a-->
+        <!--                shorter time-->
+        <!--                span, we have emerged as one of the ambitious players in this rapidly booming market of Electric-->
+        <!--                scooters.-->
+        <!--                Adhering to ethical standards, current market trends & industry norms, we have been setting a-->
+        <!--                benchmark-->
+        <!--                in this industry-->
+        <!--            </li>-->
+        <!--            <li>Tejas is one of India’s most reliable electric vehicles manufacturing companies. The company is-->
+        <!--                relentlessly-->
+        <!--                working to align with the Indian Government’s ‘Make in India’ initiative of ‘Enhancing Lives through-->
+        <!--                I-->
+        <!--                nnovations’ & technological advancements in the country. When it comes to quality assurance,-->
+        <!--                we are ISO 9001:2015 certified company, so you can completely count on us!-->
+        <!--            </li>-->
+        <!--        </ul>-->
+        <!--        <p class="py-2 pt-5 md:text-xl ">We have a wide network of EXPERT Technicians & and home services that you-->
+        <!--            will-->
+        <!--            easily get the services and maintenance for your ELECTRIC VEHICLE nearby you.</p>-->
+        <!--    </div>-->
+        <!--    <div data-aos="zoom-in-up" class="md:w-[35%] flex items-center">-->
+        <!--        <img class="w-full rounded-xl" src="{{ asset('assets/static/about.webp') }}" alt="">-->
+        <!--    </div>-->
+
+        <!--</div>-->
+
 
         <div class="">
-            <div class="swiper mySwiper py-10">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide w-full bg-red-500">
                         <img class="w-full" src="{{ asset('assets/static/homepage_banner_1.png') }}" alt="">
@@ -173,7 +175,7 @@
                     <div class="swiper-slide w-full bg-red-500">
                         <img class="w-full" src="{{ asset('assets/static/homepage_banner_2.png') }}" alt="">
                     </div>
-    
+
                 </div>
                 <div class="swiper-button-next hidden md:block"></div>
                 <div class="swiper-button-prev hidden md:block"></div>
@@ -183,96 +185,96 @@
 
         {{-- Section 1  --}}
 
-        <div class="md:pb-32">
-            <div class="flex md:flex-row flex-col-reverse items-center md:gap-10">
-                <div data-aos="fade-right"
-                    class="bg-zinc-800 md:w-[70%] md:pl-72 flex flex-col gap-5 text-white rounded-xl mx-4 md:rounded-r-xl md:p-10 p-5 py-10">
-                    <div class="flex gap-2 border-b-2 border-red-500 pb-2">
-                        <div class="">
+        <!--<div class="md:pb-32">-->
+        <!--    <div class="flex md:flex-row flex-col-reverse items-center md:gap-10">-->
+        <!--        <div data-aos="fade-right"-->
+        <!--            class="bg-zinc-800 md:w-[70%] md:pl-72 flex flex-col gap-5 text-white rounded-xl mx-4 md:rounded-r-xl md:p-10 p-5 py-10">-->
+        <!--            <div class="flex gap-2 border-b-2 border-red-500 pb-2">-->
+        <!--                <div class="">-->
 
-                        </div>
-                        <div class="">
-                            <p class="text-3xl font-semibold">53%</p>
-                            <p class="text-xl font-semibold text-red-500">LACK CRITICAL EXPERTISE</p>
-                            <p class="text-base">More than fifty percent of operators say they lack the necessary expertise
-                                to enable decarbonization; including robust planning, speedy action, and the ability to
-                                control costs.*</p>
-                        </div>
+        <!--                </div>-->
+        <!--                <div class="">-->
+        <!--                    <p class="text-3xl font-semibold">53%</p>-->
+        <!--                    <p class="text-xl font-semibold text-red-500">LACK CRITICAL EXPERTISE</p>-->
+        <!--                    <p class="text-base">More than fifty percent of operators say they lack the necessary expertise-->
+        <!--                        to enable decarbonization; including robust planning, speedy action, and the ability to-->
+        <!--                        control costs.*</p>-->
+        <!--                </div>-->
 
-                    </div>
-                    <div class="flex gap-2 border-b-2 border-red-500 pb-2">
-                        <div class="">
+        <!--            </div>-->
+        <!--            <div class="flex gap-2 border-b-2 border-red-500 pb-2">-->
+        <!--                <div class="">-->
 
-                        </div>
-                        <div class="">
-                            <p class="text-3xl font-semibold">60%</p>
-                            <p class="text-xl font-semibold text-red-500">PARTNERING FOR SUCCESS</p>
-                            <p class="text-base">To accelerate the transition, over sixty percent of surveyed operators
-                                plan
-                                to partner with FMS providers, and almost fifty percent with EV charging infrastructure
-                                providers.*</p>
-                        </div>
+        <!--                </div>-->
+        <!--                <div class="">-->
+        <!--                    <p class="text-3xl font-semibold">60%</p>-->
+        <!--                    <p class="text-xl font-semibold text-red-500">PARTNERING FOR SUCCESS</p>-->
+        <!--                    <p class="text-base">To accelerate the transition, over sixty percent of surveyed operators-->
+        <!--                        plan-->
+        <!--                        to partner with FMS providers, and almost fifty percent with EV charging infrastructure-->
+        <!--                        providers.*</p>-->
+        <!--                </div>-->
 
-                    </div>
-                </div>
-                <div data-aos="zoom-in-up" class="flex flex-col gap-5 md:w-[70%] px-4 py-5 md:p-0 md:pr-72">
-                    <h2 class="text-3xl font-bold md:pb-5">The pace of change is accelerating</h2>
-                    <p>The level of disruption in the fleet industry is growing at a rapid pace. In the last few years, the
-                        zero-emission sector has grown tremendously as companies have set net zero goals, governments have
-                        set mandates and manufacturers are delivering new products at unparalleled speed. This new landscape
-                        requires new capabilities and approaches, and finding the right fleet management providerhas never
-                        been more important.</p>
-                    <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"
-                        href="{{ route('store') }}">Checkout Future of Fleet</a>
-                </div>
-            </div>
-        </div>
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div data-aos="zoom-in-up" class="flex flex-col gap-5 md:w-[70%] px-4 py-5 md:p-0 md:pr-72">-->
+        <!--            <h2 class="text-3xl font-bold md:pb-5">The pace of change is accelerating</h2>-->
+        <!--            <p>The level of disruption in the fleet industry is growing at a rapid pace. In the last few years, the-->
+        <!--                zero-emission sector has grown tremendously as companies have set net zero goals, governments have-->
+        <!--                set mandates and manufacturers are delivering new products at unparalleled speed. This new landscape-->
+        <!--                requires new capabilities and approaches, and finding the right fleet management providerhas never-->
+        <!--                been more important.</p>-->
+        <!--            <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"-->
+        <!--                href="{{ route('store') }}">Checkout Future of Fleet</a>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
 
-        {{-- Section 2  --}}
+        <!--{{-- Section 2  --}}-->
 
-        <div class="">
-            <div class="flex flex-col px-4 md:flex-row items-center gap-10">
-                <div data-aos="fade-right" class="flex flex-col gap-5 md:pl-72 md:w-[70%] pt-5">
-                    <h2 class="text-3xl font-bold d:pb-5">Zero-emission fleets are here to stay</h2>
-                    <p>The once-in-a-generation transition to zero-emission fleets has begun. This is a great thing for the
-                        communities we live in, but the adoption of commercial electric solutions has been challenging for
-                        fleets. Why? Well, many reasons. There are fast-moving regulations, a lot of technologies to choose
-                        from, and added complexity in long-term charging solutions and energy management. Not to mention,
-                        putting it all together, operating, and maintaining it with your existing fleet!</p>
-                    <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"
-                        href="{{ route('store') }}">Upcoming mandate</a>
-                </div>
-                <div data-aos="zoom-in-up"
-                    class="bg-zinc-800 rounded-xl flex flex-col gap-5 text-white md:rounded-l-xl md:p-10 p-5 py-10">
-                    <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">
-                        <div class="">
+        <!--<div class="">-->
+        <!--    <div class="flex flex-col px-4 md:flex-row items-center gap-10">-->
+        <!--        <div data-aos="fade-right" class="flex flex-col gap-5 md:pl-72 md:w-[70%] pt-5">-->
+        <!--            <h2 class="text-3xl font-bold d:pb-5">Zero-emission fleets are here to stay</h2>-->
+        <!--            <p>The once-in-a-generation transition to zero-emission fleets has begun. This is a great thing for the-->
+        <!--                communities we live in, but the adoption of commercial electric solutions has been challenging for-->
+        <!--                fleets. Why? Well, many reasons. There are fast-moving regulations, a lot of technologies to choose-->
+        <!--                from, and added complexity in long-term charging solutions and energy management. Not to mention,-->
+        <!--                putting it all together, operating, and maintaining it with your existing fleet!</p>-->
+        <!--            <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"-->
+        <!--                href="{{ route('store') }}">Upcoming mandate</a>-->
+        <!--        </div>-->
+        <!--        <div data-aos="zoom-in-up"-->
+        <!--            class="bg-zinc-800 rounded-xl flex flex-col gap-5 text-white md:rounded-l-xl md:p-10 p-5 py-10">-->
+        <!--            <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">-->
+        <!--                <div class="">-->
 
-                        </div>
-                        <div class="">
-                            <p class="text-3xl font-semibold">75%</p>
-                            <p class="text-xl font-semibold text-red-500">COMMITMENT BY LARGE FLEETS</p>
-                            <p class="text-base">Of the 200 largest Indian fleet operators, responsible for about 1.2
-                                million vehicles, seventy-five percent have committed to decarbonization targets, and many
-                                are starting to invest.*</p>
-                        </div>
+        <!--                </div>-->
+        <!--                <div class="">-->
+        <!--                    <p class="text-3xl font-semibold">75%</p>-->
+        <!--                    <p class="text-xl font-semibold text-red-500">COMMITMENT BY LARGE FLEETS</p>-->
+        <!--                    <p class="text-base">Of the 200 largest Indian fleet operators, responsible for about 1.2-->
+        <!--                        million vehicles, seventy-five percent have committed to decarbonization targets, and many-->
+        <!--                        are starting to invest.*</p>-->
+        <!--                </div>-->
 
-                    </div>
-                    <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">
-                        <div class="">
+        <!--            </div>-->
+        <!--            <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">-->
+        <!--                <div class="">-->
 
-                        </div>
-                        <div class="">
-                            <p class="text-3xl font-semibold">50%</p>
-                            <p class="text-xl font-semibold text-red-500">ZERO EMMISSION BY 2027</p>
-                            <p class="text-base">While more than fifty percent plan to operate fully carbon-free fleets by
-                                2027, ninety percent plan to fully decarbonize eventually. The momentum is toward
-                                decarbonization.*</p>
-                        </div>
+        <!--                </div>-->
+        <!--                <div class="">-->
+        <!--                    <p class="text-3xl font-semibold">50%</p>-->
+        <!--                    <p class="text-xl font-semibold text-red-500">ZERO EMMISSION BY 2027</p>-->
+        <!--                    <p class="text-base">While more than fifty percent plan to operate fully carbon-free fleets by-->
+        <!--                        2027, ninety percent plan to fully decarbonize eventually. The momentum is toward-->
+        <!--                        decarbonization.*</p>-->
+        <!--                </div>-->
 
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
 
         {{-- product  --}}
 
@@ -358,29 +360,17 @@
                 </div>
             </div>
         </div> --}}
+            </div>
 
         {{-- Services  --}}
 
-        <div id="service" class="md:pt-20 pt-10 px-4">
-            <div class="md:flex justify-center">
-                <p class="text-2xl md:text-4xl font-bold pb-4 md:w-[70%]">CHECK OUR SERVICES</p>
-            </div>
-            <div class="flex flex-col md:flex-row justify-center gap-5 md:py-10">
+        <div id="service" class="md:pt-20 pt-10 px-4 bg-black text-white">
+            <!--<div class="md:flex justify-center">-->
+            <!--    <p class="text-2xl md:text-4xl font-bold pb-4 md:w-[70%]">CHECK OUR SERVICES</p>-->
+            <!--</div>-->
+            <div class="flex flex-col md:flex-row justify-between md:px-20 pb-10 gap-5 md:py-10">
                 <div data-aos="zoom-in-up"
-                    class="border-red-500 border-2 hover:scale-110 duration-500 rounded-lg md:w-[22%] flex flex-col justify-center items-center py-12">
-                    <div class="bg-red-500 p-3 w-fit rounded text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
-                            <path
-                                d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
-                        </svg>
-                    </div>
-                    <a href="" class="text-2xl hover:text-red-500 duraton-500 font-bold uppercase py-2">Spares</a>
-                    <p class="text-center px-4 pt-2">Tejas E-Scooty has a very wide range of dealer network. You will get
-                        the dealers through out INDIA. Our parthers & sales at stores provide you with best GUIDANCE &
-                        ASSISTANCE.</p>
-                </div>
-                <div data-aos="zoom-in-up"
-                    class="border-red-500 border-2 hover:scale-110 duration-500 rounded-lg md:w-[22%] flex flex-col justify-center items-center py-12">
+                    class="border-red-500 border-2 hover:scale-110 duration-500 rounded-lg md:w-[20%] flex flex-col justify-center items-center py-12">
                     <div class="bg-red-500 p-3 w-fit rounded text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
                             <path
@@ -393,7 +383,33 @@
                         vehicle.</p>
                 </div>
                 <div data-aos="zoom-in-up"
-                    class="border-red-500 hover:scale-110 duration-500 border-2 rounded-lg md:w-[22%] flex flex-col justify-center items-center py-12">
+                    class="border-red-500 border-2 hover:scale-110 duration-500 rounded-lg md:w-[20%] flex flex-col justify-center items-center py-12">
+                    <div class="bg-red-500 p-3 w-fit rounded text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+                            <path
+                                d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
+                        </svg>
+                    </div>
+                    <a href="" class="text-2xl hover:text-red-500 duraton-500 font-bold uppercase py-2">Spares</a>
+                    <p class="text-center px-4 pt-2">Tejas E-Scooty has a very wide range of dealer network. You will get
+                        the dealers through out INDIA. Our parthers & sales at stores provide you with best GUIDANCE &
+                        ASSISTANCE.</p>
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="border-red-500 border-2 hover:scale-110 duration-500 rounded-lg md:w-[20%] flex flex-col justify-center items-center py-12">
+                    <div class="bg-red-500 p-3 w-fit rounded text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+                            <path
+                                d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z" />
+                        </svg>
+                    </div>
+                    <a href="" class="text-2xl hover:text-red-500 duraton-500 font-bold uppercase py-2">Charging Station</a>
+                    <p class="text-center px-4 pt-2">Tejas E-Scooty has a very wide range of dealer network. You will get
+                        the dealers through out INDIA. Our parthers & sales at stores provide you with best GUIDANCE &
+                        ASSISTANCE.</p>
+                </div>
+                <div data-aos="zoom-in-up"
+                    class="border-red-500 hover:scale-110 duration-500 border-2 rounded-lg md:w-[20%] flex flex-col justify-center items-center py-12">
                     <div class="bg-red-500 p-3 w-fit rounded text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
                             <path
@@ -405,26 +421,25 @@
                     <a href="" class="text-2xl hover:text-red-500 duraton-500 font-bold uppercase py-2">Service</a>
                     <p class="text-center px-4 pt-2">We have wide network of Technician & WORKSHOP and home services. You
                         will eacily get the service and maintenance for your electric vehicle nearby you. All you have to
-                        dois to Call our helpline number 1800 8430828.</p>
+                        dois to Call our helpline number 011-47095975 , +91-9870368567.</p>
                 </div>
-            </div>
         </div>
 
         {{-- Contact --}}
 
-        <div class="flex justify-center pb-10 p-4">
-            <div data-aos="zoom-in-up"
-                class="bg-zinc-800 py-5 md:py-0 text-white md:w-[80%] rounded-b-2xl justify-between md:flex items-center">
-                <div class="md:p-12 p-4">
-                    <p class="text-red-500">OVERCOME BARRIERS TO ADOPTION</p>
-                    <p class="text-3xl font-bold">Remain focused on your core business</p>
-                </div>
-                <div class="md:p-10 p-5">
-                    <a class="bg-red-500 border-red-500 border-2 hover:bg-transparent px-10 py-1 rounded-full duration-500"
-                        href="{{ route('contact') }}">Get in touch</a>
-                </div>
-            </div>
-        </div>
+        <!--<div class="flex justify-center pb-10 p-4">-->
+        <!--    <div data-aos="zoom-in-up"-->
+        <!--        class="bg-zinc-800 py-5 md:py-0 text-white md:w-[80%] rounded-b-2xl justify-between md:flex items-center">-->
+        <!--        <div class="md:p-12 p-4">-->
+        <!--            <p class="text-red-500">OVERCOME BARRIERS TO ADOPTION</p>-->
+        <!--            <p class="text-3xl font-bold">Remain focused on your core business</p>-->
+        <!--        </div>-->
+        <!--        <div class="md:p-10 p-5">-->
+        <!--            <a class="bg-red-500 border-red-500 border-2 hover:bg-transparent px-10 py-1 rounded-full duration-500"-->
+        <!--                href="{{ route('contact') }}">Get in touch</a>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</div>-->
     </div>
 
     <script>

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Contact_us;
 use App\Models\Enquiry;
 use App\Models\Product;
+use App\Models\ProductModel;
 use Illuminate\Http\Request;
 
 class clientController extends Controller
@@ -13,64 +15,64 @@ class clientController extends Controller
 
     public function home(Request $request)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.home' , compact('menu_category'));
+        $category = Category::all();
+        return view('client_panel.pages.home' , compact('category'));
     }
 
     public function store(Request $request)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
+        $category = Category::all();
+        $model = ProductModel::orderBy('id', "desc")->paginate(15);
         $product = Product::orderBy('id', "desc")->paginate(15);
-        $category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.store', compact('product', 'category' , 'menu_category'));
+        return view('client_panel.pages.store', compact('model' , 'product', 'category'));
     }
 
     public function product(Request $request, $slug)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
+        $category = Category::all();
         $product = Product::where('slug', "$slug")->first();
         $relatedproduct = Product::Where('category', "$product->category")->get();
-        return view('client_panel.pages.product', compact('product', 'relatedproduct' , 'menu_category'));
+        return view('client_panel.pages.product', compact('product', 'relatedproduct' , 'category'));
     }
 
     public function categoryfilter(Request $request, $slug)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
+        $category = Category::all();
         $product = Product::where('category', "$slug")->paginate(15);
-        $category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.categoryfilter', compact('product', 'category' , 'menu_category'));
+        $category = Category::all();
+        return view('client_panel.pages.categoryfilter', compact('product', 'category' , 'category'));
     }
 
     
     public function about(Request $request)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.about' , compact('menu_category'));
+        $category = Category::all();
+        return view('client_panel.pages.about' , compact('category'));
     }
 
     public function thanks(Request $request, $slug)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
+        $category = Category::all();
         if ($slug != 'contact') {
             $product = Product::where('slug', "$slug")->first();
             $message = "Thanks for having interest in $product->title .";
-            return view('client_panel.pages.thanks', compact('message' , 'menu_category'));
+            return view('client_panel.pages.thanks', compact('message' , 'category'));
         } else {
             $message = "Thanks for contacting us.";
-            return view('client_panel.pages.thanks', compact('message' , 'menu_category'));
+            return view('client_panel.pages.thanks', compact('message' , 'category'));
         }
     }
 
     public function contact(Request $request)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.contact' , compact('menu_category'));
+        $category = Category::all();
+        return view('client_panel.pages.contact' , compact('category'));
     }
 
     public function services(Request $request)
     {
-        $menu_category = Product::select('category')->distinct('category')->get();
-        return view('client_panel.pages.services' , compact('menu_category'));
+        $category = Category::all();
+        return view('client_panel.pages.services' , compact('category'));
     }
 
     public function enquire(Request $request)
@@ -116,14 +118,14 @@ class clientController extends Controller
     //     $category = Category::all();
     //     $cat = Category::where('slug' , "$slug")->first();
     //     $product = Product::where('category' , $cat->id)->orderBy('created_at' , "desc")->paginate(8);
-    //     return view('client_panel.pages.categoryfilter' , compact('product' , 'category' , 'cat' , 'menu_category'));
+    //     return view('client_panel.pages.categoryfilter' , compact('product' , 'category' , 'cat' , 'category'));
     // }
 
     // public function product(Request $request , $slug){
     //     $category = Category::all();
     //     $product = Product::where('slug' , "$slug")->first();
     //     $productsuggestion = Product::where('category' , $product->category)->paginate(4);
-    //     return view('client_panel.pages.product' , compact('product' , 'category' , 'productsuggestion'  , 'menu_category'));
+    //     return view('client_panel.pages.product' , compact('product' , 'category' , 'productsuggestion'  , 'category'));
     // }
 
 }

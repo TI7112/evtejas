@@ -4,6 +4,16 @@
 
 @section('content')
 
+<div class="bg-[url('../assets/static/background.webp')] bg-fixed bg-cover w-full min-h-screen">
+    <div
+        class="bg-[rgba(0,0,0,0.7)] w-full gap-1 py-12 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
+        <img data-aos="fade-up" class="w-96" src="{{ asset('assets/static/logo_white.png')}}" alt="">
+        <p class="md:text-6xl text-3xl font-bold text-center">ELECTRIC VEHICLES</p>
+        <p class="md:text-2xl text-sm font-">Safety | Power | Comfort</p>
+        <p class="md:text-2xl text-sm font-bold text-red-500">Best Range with Comfort Ride in Slick Design</p>
+
+    </div>
+</div>
     <div class="bg-zinc-900 w-full min-h-screen pb-10">
         <div class="text-white">
             <section class=" body-font">
@@ -11,19 +21,20 @@
                     <div class="flex justify-between">
                         <p class="text-4xl font-bold py-10 font-mono">Tejas Collections</p>
                         <div class="hidden md:flex gap-5 items-center">
-                            <p class="text-sm md:text-xl font-bold pb-2 uppercase">Select Model</p>
+                            <p class="text-sm md:text-xl font-bold pb-2 uppercase">Select Category</p>
                             <select class="evcategory capitalize bg-zinc-900 outline-none border-2 p-2 text-xs md:text-lg rounded-lg font-bold" name="evcategory"
                                 >
                                 @foreach ($category as $value)
-                                    @if ($product[0]->category == $value->category)
-                                        <option selected value="{{ $value->category }}">{{ $value->category }}</option>
+                                    @if ($cat->id == $value->id)
+                                        <option selected value="{{ $value->cat_slug }}">{{ $value->cat_title }}</option>
                                     @else
-                                        <option value="{{ $value->category }}">{{ $value->category }}</option>
+                                        <option value="{{ $value->cat_slug }}">{{ $value->cat_title }}</option>
                                     @endif
                                 @endforeach
                             </select>
                         </div>
                     </div>
+                    @if (count($product) > 0)
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 -m-4">
                         @foreach ($product as $value)
                             <div data-aos="fade-up" class="p-4 ">
@@ -41,7 +52,7 @@
                                     <div class="p-6">
                                         <h2
                                             class="uppercase tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
-                                            {{ $value->category }}
+                                            {{ $value->getCategory->cat_title }}
                                         </h2>
                                         <a href="/product/{{ $value->slug }}"
                                             class="title-font text-red-500 text-xl font-medium mb-3">{{ $value->title }}</a>
@@ -85,6 +96,11 @@
                     <div class="pt-5">
                         {{ $product->links() }}
                     </div>
+                    @else
+                    <div class="">
+                        <p class="px-2 text-zinc-300">No product found</p>
+                    </div>
+                    @endif
                 </div>
             </section>
         </div>

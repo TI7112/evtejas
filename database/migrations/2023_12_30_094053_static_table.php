@@ -11,11 +11,36 @@ return new class extends Migration
      */
     public function up(): void
     {
+
+        Schema::create('tbl_category', function (Blueprint $table) {
+            $table->id();
+            $table->text('cat_title');
+            $table->text('cat_slug');
+            $table->text('cat_image')->nullable();
+            $table->text('status')->default('active');
+            $table->timestamps();
+        });
+
+        Schema::create('tbl_model', function (Blueprint $table) {
+            $table->id();
+            $table->text('title');
+            $table->text('slug');
+            $table->unsignedBigInteger('category');
+            $table->foreign('category')->references('id')->on('tbl_category')->cascadeOnUpdate();
+            $table->text('image')->nullable();
+            $table->text('status')->default('active');
+            $table->timestamps();
+        });
+
         Schema::create('tbl_product', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('slug');
             $table->text('code')->nullable();
+            $table->unsignedBigInteger('category');
+            $table->foreign('category')->references('id')->on('tbl_category')->cascadeOnUpdate();
+            $table->unsignedBigInteger('model');
+            $table->foreign('model')->references('id')->on('tbl_model')->cascadeOnUpdate();
             $table->text('description')->nullable();
             $table->text('discount')->nullable();
             $table->text('color')->nullable();
@@ -24,7 +49,7 @@ return new class extends Migration
             $table->text('Brand')->default('TEJAS');
             $table->timestamps();
         });
-        
+
         Schema::create('tbl_features', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("product_id");
@@ -36,7 +61,6 @@ return new class extends Migration
             $table->text("range")->nullable();
             $table->text("charging_time")->nullable();
             $table->text("fast_charging_time")->nullable();
-            $table->text("battery_swapping")->nullable();
             $table->text("front_suspension")->nullable();
             $table->text("rear_suspension")->nullable();
             $table->text("brakes_type")->nullable();
@@ -46,24 +70,14 @@ return new class extends Migration
             $table->text("tyre_size")->nullable();
             $table->text("head_lights")->nullable();
             $table->text("back_light")->nullable();
-            $table->text("mobile_charging")->nullable();
-            $table->text("anti_theft_alarm")->nullable();
-            $table->text("keyless_entry")->nullable();
             $table->text("ground_clearance")->nullable();
-            $table->text("digital_speedometre")->nullable();
-            $table->text("central_locking")->nullable();
-            $table->text("find_my_scooty")->nullable();
-            $table->text("secure_parking")->nullable();
-            $table->text("reverse_gear")->nullable();
-            $table->text("floor_mat")->nullable();
-            $table->text("tool_kit")->nullable();
             $table->text("dimension")->nullable();
-            $table->text("water_and_dust_resistance")->nullable();
             $table->text("body_type")->nullable();
             $table->text("light")->nullable();
             $table->text("speed_mode")->nullable();
             $table->text("gradient")->nullable();
             $table->text("warrenty")->nullable();
+            $table->text("additional_features")->nullable();
             $table->timestamps();
         });
     }
