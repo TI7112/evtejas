@@ -102,8 +102,15 @@
                     </div>
                 </div>
             </div>
-            <a class="hover:underline hover:text-white duration-500" href="{{ route('services') }}">Services</a>
-            <a class="hover:underline hover:text-white duration-500" href="{{ route('contact') }}">Contact us</a>
+            <div x-data="{ open: false }">
+                <button @click="open = !open" class="hover:underline hover:text-white duration-500">Services</button>
+                <div x-show="open" class="absolute top-[74px] bg-zinc-900 w-60 rounded -ml-8">
+                    <div class="flex flex-col py-4">
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('services') }}">EV Services</a>
+                    </div>
+                </div>
+            </div>
+            <a class="hover:underline hover:text-white duration-500" href="{{ route('contact') }}">Consumer Care</a>
         </div>
     </div>
     {{-- body  --}}

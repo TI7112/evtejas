@@ -123,49 +123,6 @@
 
     <div class="bg-white text-black">
 
-        {{-- About us  --}}
-
-        <!--<p class="text-2xl font-bold px-4 py-5 md:hidden">About Us</p>-->
-        <!--<div id="about" class="flex flex-col-reverse md:flex-row px-4 gap-10 md:py-20 justify-center">-->
-        <!--    <div data-aos="fade-right" class="md:w-[45%] md:py-4 px-3 md:px-0">-->
-        <!--        <p class="text-4xl font-bold hidden md:block">About Us</p>-->
-        <!--        <p class="md:py-2 pb-5 md:pt-5 md:text-xl">At Tejas, we're dedicated to delivering value to our customers-->
-        <!--            and the-->
-        <!--            global community.</p>-->
-        <!--        <ul class="list-disc px-7 text-sm md:text-base flex flex-col gap-2">-->
-        <!--           <li>Tejas is a subsidiary of Kamakhya Worldwide Technology Private Limited. Based out in Lucknow, the-->
-        <!--                capital-->
-        <!--                city of Uttar Pradesh, the company was incorporated in 2019. However, the organization introduced-->
-        <!--                Tejas-->
-        <!--                a different unit wholly dedicated to Electronics Home Appliances and greener Energy powered-->
-        <!--                vehicles.</li>-->
-        <!--            <li>Driven by our vision of sustainability, we have forayed into the E-Bike Market Segment. Within a-->
-        <!--                shorter time-->
-        <!--                span, we have emerged as one of the ambitious players in this rapidly booming market of Electric-->
-        <!--                scooters.-->
-        <!--                Adhering to ethical standards, current market trends & industry norms, we have been setting a-->
-        <!--                benchmark-->
-        <!--                in this industry-->
-        <!--            </li>-->
-        <!--            <li>Tejas is one of India’s most reliable electric vehicles manufacturing companies. The company is-->
-        <!--                relentlessly-->
-        <!--                working to align with the Indian Government’s ‘Make in India’ initiative of ‘Enhancing Lives through-->
-        <!--                I-->
-        <!--                nnovations’ & technological advancements in the country. When it comes to quality assurance,-->
-        <!--                we are ISO 9001:2015 certified company, so you can completely count on us!-->
-        <!--            </li>-->
-        <!--        </ul>-->
-        <!--        <p class="py-2 pt-5 md:text-xl ">We have a wide network of EXPERT Technicians & and home services that you-->
-        <!--            will-->
-        <!--            easily get the services and maintenance for your ELECTRIC VEHICLE nearby you.</p>-->
-        <!--    </div>-->
-        <!--    <div data-aos="zoom-in-up" class="md:w-[35%] flex items-center">-->
-        <!--        <img class="w-full rounded-xl" src="{{ asset('assets/static/about.webp') }}" alt="">-->
-        <!--    </div>-->
-
-        <!--</div>-->
-
-
         <div class="">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
