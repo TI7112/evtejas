@@ -54,13 +54,13 @@
                                             class="uppercase tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
                                             {{ $value->getCategory->cat_title }}
                                         </h2>
-                                        <a href="/product/{{ $value->slug }}"
-                                            class="title-font text-red-500 text-xl font-medium mb-3">{{ $value->title }}</a>
-                                        <p class="leading-relaxed mb-3 text-zinc-800">Motor :
+                                        <a href="/product/{{ $value->getModel->slug }}"
+                                            class="title-font text-red-500 text-xl font-medium mb-3">{{ $value->getModel->title }}</a>
+                                        {{-- <p class="leading-relaxed mb-3 text-zinc-800">Motor :
                                             {{ $value->getfeatures->motor }} || Range : {{ $value->getfeatures->range }} ||
-                                            Capacity : {{ $value->getfeatures->capacity }}</p>
+                                            Capacity : {{ $value->getfeatures->capacity }}</p> --}}
                                         <div class="flex items-center flex-wrap ">
-                                            <a href="/product/{{ $value->slug }}"
+                                            <a href="/product/{{ $value->getModel->slug }}"
                                                 class="text-red-500 inline-flex items-center md:mb-2 lg:mb-0">Checkout
                                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
                                                     stroke-width="2" fill="none" stroke-linecap="round"
@@ -94,7 +94,7 @@
                         @endforeach
                     </div>
                     <div class="pt-5">
-                        {{ $product->links() }}
+                        {{-- {{ $product->links() }} --}}
                     </div>
                     @else
                     <div class="">

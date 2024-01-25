@@ -23,24 +23,34 @@ class clientController extends Controller
     {
         $category = Category::all();
         $model = ProductModel::orderBy('id', "desc")->paginate(15);
-        $product = Product::orderBy('id', "desc")->paginate(15);
+        $product = Product::select('model' , 'img' , 'category'  )->distinct()->orderBy('id', "desc")->get();
+
+        // return count($product);
+        // return $product;
         return view('client_panel.pages.store', compact('model' , 'product', 'category'));
     }
 
     public function product(Request $request, $slug)
-    {
+    { 
         $category = Category::all();
-        $product = Product::where('slug', "$slug")->first();
-        $relatedproduct = Product::Where('category', "$product->category")->get();
+        $model = ProductModel::where('slug' , "$slug")->first();
+        if(isset($model)){
+            $product = Product::where('model', "$model->id")->first();
+        }
+        else{
+            $product = Product::where('slug' , "$slug")->first();
+        }
+        $relatedproduct = Product::Where('model', "$product->model")->get();
+
         return view('client_panel.pages.product', compact('product', 'relatedproduct' , 'category'));
     }
 
     public function categoryfilter(Request $request, $slug)
     {
         $category = Category::all();
-        $product = Product::where('category', "$slug")->paginate(15);
-        $category = Category::all();
-        return view('client_panel.pages.categoryfilter', compact('product', 'category' , 'category'));
+        $cat = Category::where('cat_slug' , "$slug")->first();
+        $product = Product::where('category', "$cat->id")->select('model' , 'img' , 'category')->distinct()->get();
+        return view('client_panel.pages.categoryfilter', compact('cat' , 'product', 'category'));
     }
 
     
