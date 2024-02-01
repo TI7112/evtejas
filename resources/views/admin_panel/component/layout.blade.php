@@ -17,7 +17,7 @@
 
 <body class="h-screen">
 
-    <header class="h-14 bg-gray-100 top-0 w-full fixed shadow" style="z-index: 10;">
+    <header class="print:hidden h-14 bg-gray-100 top-0 w-full fixed shadow" style="z-index: 10;">
         <div class="flex justify-between items-center px-10 h-14">
             <div class="flex justify-between items-center gap-x-14">
                 <div class="w-40">
