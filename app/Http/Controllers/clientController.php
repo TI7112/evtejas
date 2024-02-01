@@ -59,6 +59,12 @@ class clientController extends Controller
         $category = Category::all();
         return view('client_panel.pages.about' , compact('category'));
     }
+    
+    public function privacy_policy(Request $request)
+    {
+        $category = Category::all();
+        return view('client_panel.pages.privacyPolicy' , compact('category'));
+    }
 
     public function thanks(Request $request, $slug)
     {

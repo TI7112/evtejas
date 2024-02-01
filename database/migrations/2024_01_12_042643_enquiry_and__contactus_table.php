@@ -19,6 +19,8 @@ return new class extends Migration
             $table->unsignedBigInteger('model');
             $table->foreign('model')->references('id')->on('tbl_product')->cascadeOnUpdate();
             $table->text('message')->nullable();
+            $table->text('remark')->nullable();
+            $table->text('status')->nullable();
             $table->timestamps();
         });
         
@@ -29,6 +31,8 @@ return new class extends Migration
             $table->text('phone')->nullable();
             $table->text('subject')->nullable();
             $table->text('message')->nullable();
+            $table->text('remark')->nullable();
+            $table->text('status')->nullable();
             $table->timestamps();
         });
     }

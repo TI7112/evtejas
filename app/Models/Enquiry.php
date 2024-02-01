@@ -14,6 +14,6 @@ class Enquiry extends Model
     protected $with = ['getProduct'];
 
     public function getProduct(){
-        return $this->belongsTo(Product::class , 'model' , 'product_id');
+        return $this->belongsTo(Product::class , 'model' , 'id');
     }
 }
