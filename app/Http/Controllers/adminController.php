@@ -34,7 +34,7 @@ class adminController extends Controller
             $resolvedReport = Enquiry::where('status', "resolved")->orderBy('created_at', 'DESC')->whereMonth('created_at', "$i")->whereYear('created_at', "$year")->get();
             array_push($enquiryResolved, count($resolvedReport));
         }
-        $enquiryResolvedData = implode(',', $enquiryResolved);
+        $enquiryResolvedData = implode(',' ,  $enquiryResolved);
 
         // last month report
 
