@@ -1,6 +1,6 @@
 @extends('client_panel.component.layout')
 
-@section('title', 'Home')
+@section('title', 'Contact')
 
 @section('content')
 

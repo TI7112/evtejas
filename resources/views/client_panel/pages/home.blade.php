@@ -23,8 +23,8 @@
     <!--</div>-->
     <div class="bg-[url('assets/static/background.webp')] bg-fixed bg-cover w-full min-h-screen">
         <div
-            class="bg-[rgba(0,0,0,0.7)] w-full gap-1 pt-32 md:pt-12 py-12 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
-            <img data-aos="fade-up" class="md:w-96 w-60" src="{{ asset('assets/static/logo_white.png')}}" alt="">
+            class="bg-[rgba(0,0,0,0.7)] w-full gap-1 py-12 pt-48 md:py-0 min-h-screen text-white flex flex-col justify-center items-center">
+            <img data-aos="fade-up" class="w-40 md:w-96" src="{{ asset('assets/static/logo_white.png')}}" alt="">
             <p class="md:text-6xl text-3xl font-bold text-center">ELECTRIC VEHICLES</p>
             <p class="md:text-2xl text-sm font-">Safety | Power | Comfort</p>
             <p class="md:text-2xl text-sm font-bold text-red-500">Best Range with Comfort Ride in Slick Design</p>
@@ -122,7 +122,6 @@
     </div>
 
     <div class="bg-white text-black">
-
         <div class="">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -139,99 +138,6 @@
                 <div class="swiper-pagination md:hidden"></div>
             </div>
         </div>
-
-        {{-- Section 1  --}}
-
-        <!--<div class="md:pb-32">-->
-        <!--    <div class="flex md:flex-row flex-col-reverse items-center md:gap-10">-->
-        <!--        <div data-aos="fade-right"-->
-        <!--            class="bg-zinc-800 md:w-[70%] md:pl-72 flex flex-col gap-5 text-white rounded-xl mx-4 md:rounded-r-xl md:p-10 p-5 py-10">-->
-        <!--            <div class="flex gap-2 border-b-2 border-red-500 pb-2">-->
-        <!--                <div class="">-->
-
-        <!--                </div>-->
-        <!--                <div class="">-->
-        <!--                    <p class="text-3xl font-semibold">53%</p>-->
-        <!--                    <p class="text-xl font-semibold text-red-500">LACK CRITICAL EXPERTISE</p>-->
-        <!--                    <p class="text-base">More than fifty percent of operators say they lack the necessary expertise-->
-        <!--                        to enable decarbonization; including robust planning, speedy action, and the ability to-->
-        <!--                        control costs.*</p>-->
-        <!--                </div>-->
-
-        <!--            </div>-->
-        <!--            <div class="flex gap-2 border-b-2 border-red-500 pb-2">-->
-        <!--                <div class="">-->
-
-        <!--                </div>-->
-        <!--                <div class="">-->
-        <!--                    <p class="text-3xl font-semibold">60%</p>-->
-        <!--                    <p class="text-xl font-semibold text-red-500">PARTNERING FOR SUCCESS</p>-->
-        <!--                    <p class="text-base">To accelerate the transition, over sixty percent of surveyed operators-->
-        <!--                        plan-->
-        <!--                        to partner with FMS providers, and almost fifty percent with EV charging infrastructure-->
-        <!--                        providers.*</p>-->
-        <!--                </div>-->
-
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div data-aos="zoom-in-up" class="flex flex-col gap-5 md:w-[70%] px-4 py-5 md:p-0 md:pr-72">-->
-        <!--            <h2 class="text-3xl font-bold md:pb-5">The pace of change is accelerating</h2>-->
-        <!--            <p>The level of disruption in the fleet industry is growing at a rapid pace. In the last few years, the-->
-        <!--                zero-emission sector has grown tremendously as companies have set net zero goals, governments have-->
-        <!--                set mandates and manufacturers are delivering new products at unparalleled speed. This new landscape-->
-        <!--                requires new capabilities and approaches, and finding the right fleet management providerhas never-->
-        <!--                been more important.</p>-->
-        <!--            <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"-->
-        <!--                href="{{ route('store') }}">Checkout Future of Fleet</a>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-
-        <!--{{-- Section 2  --}}-->
-
-        <!--<div class="">-->
-        <!--    <div class="flex flex-col px-4 md:flex-row items-center gap-10">-->
-        <!--        <div data-aos="fade-right" class="flex flex-col gap-5 md:pl-72 md:w-[70%] pt-5">-->
-        <!--            <h2 class="text-3xl font-bold d:pb-5">Zero-emission fleets are here to stay</h2>-->
-        <!--            <p>The once-in-a-generation transition to zero-emission fleets has begun. This is a great thing for the-->
-        <!--                communities we live in, but the adoption of commercial electric solutions has been challenging for-->
-        <!--                fleets. Why? Well, many reasons. There are fast-moving regulations, a lot of technologies to choose-->
-        <!--                from, and added complexity in long-term charging solutions and energy management. Not to mention,-->
-        <!--                putting it all together, operating, and maintaining it with your existing fleet!</p>-->
-        <!--            <a class="text-lg w-fit font-semibold bg-red-500 text-white px-10 py-1 border-2 border-red-500 hover:bg-transparent hover:text-red-500 duration-500 rounded-full"-->
-        <!--                href="{{ route('store') }}">Upcoming mandate</a>-->
-        <!--        </div>-->
-        <!--        <div data-aos="zoom-in-up"-->
-        <!--            class="bg-zinc-800 rounded-xl flex flex-col gap-5 text-white md:rounded-l-xl md:p-10 p-5 py-10">-->
-        <!--            <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">-->
-        <!--                <div class="">-->
-
-        <!--                </div>-->
-        <!--                <div class="">-->
-        <!--                    <p class="text-3xl font-semibold">75%</p>-->
-        <!--                    <p class="text-xl font-semibold text-red-500">COMMITMENT BY LARGE FLEETS</p>-->
-        <!--                    <p class="text-base">Of the 200 largest Indian fleet operators, responsible for about 1.2-->
-        <!--                        million vehicles, seventy-five percent have committed to decarbonization targets, and many-->
-        <!--                        are starting to invest.*</p>-->
-        <!--                </div>-->
-
-        <!--            </div>-->
-        <!--            <div class="flex gap-2 md:w-[70%] border-b-2 border-red-500 pb-3">-->
-        <!--                <div class="">-->
-
-        <!--                </div>-->
-        <!--                <div class="">-->
-        <!--                    <p class="text-3xl font-semibold">50%</p>-->
-        <!--                    <p class="text-xl font-semibold text-red-500">ZERO EMMISSION BY 2027</p>-->
-        <!--                    <p class="text-base">While more than fifty percent plan to operate fully carbon-free fleets by-->
-        <!--                        2027, ninety percent plan to fully decarbonize eventually. The momentum is toward-->
-        <!--                        decarbonization.*</p>-->
-        <!--                </div>-->
-
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
 
         {{-- product  --}}
 

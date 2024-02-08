@@ -1,6 +1,6 @@
 @extends('client_panel.component.layout')
 
-@section('title', 'Home')
+@section('title', " {{ $value->title }}")
 
 @section('content')
 
@@ -16,7 +16,7 @@
 </div>
     <div class="relative bg-white h-screen md:h-[125vh] border-b-4">
         <div
-        class="w-full h-screen pt-52 md:pt-0 bg-cover bg-no-repeat flex justify-between gap-10 bg-[url('/assets/static/product_bg.jpg')] md:px-32 px-4">
+        class="w-full h-screen pt-52 md:pt-0 bg-cover bg-no-repeat flex justify-between gap-10 bg-[url('/public/assets/static/product_bg.jpg')] md:px-32 px-4">
         <p class="md:hidden absolute top-2 font-bold text-white text-sm tracking-wider pl-2">{{$product->title}} </p>
             <div class="flex flex-col text-white py-10 gap-2 md:gap-5 h-full md:w-96">
                 <div class="bg-[rgba(0,0,0,0.6)] flex items-center gap-4 p-2 md:p-3 rounded-lg">

@@ -218,8 +218,6 @@
                     function(data) {
                         showInfo.classList.remove('hidden')
 
-                        console.log(data);
-
                         $('#ViewName').text(data.name)
                         $('#ViewStatus').text(data.status)
                         $('#ViewPhone').text(data.phone)

@@ -24,14 +24,11 @@ class clientController extends Controller
         $category = Category::all();
         $model = ProductModel::orderBy('id', "desc")->paginate(15);
         $product = Product::select('model' , 'img' , 'category'  )->distinct()->orderBy('id', "desc")->get();
-
-        // return count($product);
-        // return $product;
         return view('client_panel.pages.store', compact('model' , 'product', 'category'));
     }
 
     public function product(Request $request, $slug)
-    { 
+    {
         $category = Category::all();
         $model = ProductModel::where('slug' , "$slug")->first();
         if(isset($model)){
@@ -54,18 +51,34 @@ class clientController extends Controller
     }
 
     
-    public function about(Request $request)
+    public function about_tejas(Request $request)
     {
         $category = Category::all();
-        return view('client_panel.pages.about' , compact('category'));
+        return view('client_panel.pages.about_tejas' , compact('category'));
+    }
+    public function about_tejas_ev(Request $request)
+    {
+        $category = Category::all();
+        return view('client_panel.pages.about_tejas_ev' , compact('category'));
+    }
+    public function about_vision(Request $request)
+    {
+        $category = Category::all();
+        return view('client_panel.pages.about_vision' , compact('category'));
+    }
+    public function about_office(Request $request)
+    {
+        $category = Category::all();
+        return view('client_panel.pages.about_tejas_office' , compact('category'));
     }
     
+
     public function privacy_policy(Request $request)
     {
         $category = Category::all();
         return view('client_panel.pages.privacyPolicy' , compact('category'));
     }
-
+    
     public function thanks(Request $request, $slug)
     {
         $category = Category::all();

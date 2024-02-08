@@ -12,6 +12,16 @@
     <script src="//cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3DDNGLFS3"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DEH9S5084B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DEH9S5084B');
+</script>
 </head>
 <style>
     html {
@@ -37,7 +47,7 @@
                         <p class="text-2xl text-white px-5 pt-6">Quicklinks</p>
                         <div class="text-zinc-300 px-8 py-2 flex flex-col">
                             <a href="/" class="text-lg hover:underline">Home</a>
-                            <a href="{{ route('about') }}" class="text-lg hover:underline">About</a>
+                            <a href="{{ route('about_tejas') }}" class="text-lg hover:underline">About</a>
                             <a href="{{ route('store') }}" class="text-lg hover:underline">Products</a>
                             <a href="{{ route('services') }}" class="text-lg hover:underline">Services</a>
                             <a href="{{ route('contact') }}" class="text-lg hover:underline">Contact</a>
@@ -54,9 +64,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center w-full lg:w-auto">
+            <div class="flex justify-center w-full lg:w-auto py-2">
                 <a href="{{ route('home') }}">
-                    <img class="w-40" src="{{ asset('assets/static/logo_white.png') }}" alt="">
+                    <img class="w-24" src="{{ asset('assets/static/logo_white.png') }}" alt="">
                 </a>
             </div>
         </div>
@@ -66,11 +76,14 @@
                 <button @click="open = !open" class="hover:underline hover:text-white duration-500">About</button>
                 <div x-show="open" class="absolute top-[74px] bg-zinc-900 w-60 rounded -ml-8">
                     <div class="flex flex-col py-4">
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about') }}">About Tejas</a>
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about') }}">About TEJAS EV</a>
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about') }}">Vision & Value</a>
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about') }}">Mission</a>
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about') }}">Tejas Offices</a>
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about_tejas') }}">About
+                            Tejas</a>
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about_tejas_ev') }}">About
+                            TEJAS EV</a>
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about_vision') }}">Vision &
+                            Value</a>
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="{{ route('about_office') }}">Tejas
+                            Offices</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +92,7 @@
                 <div x-show="open" class="absolute top-[74px] bg-zinc-900 w-60 rounded -ml-8">
                     <div class="flex flex-col py-4">
                         <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="/category/low-speed">Low Speed</a>
-                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="/category/high-speed">Hign Speed</a>
+                        <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="/category/high-speed">High Speed</a>
                         <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="/category/spares-and-parts">Spares and
                             Parts</a>
                         <a class="py-2 pl-8 uppercase hover:bg-zinc-800" href="/category/battery">Battery</a>
@@ -179,6 +192,8 @@
                     <a class="hover:underline hover:text-red-500 duration-500" href="">Electric Vehicles</a>
                     <a class="hover:underline hover:text-red-500 duration-500" href="">Renewable Energy</a>
                     <a class="hover:underline hover:text-red-500 duration-500" href="">Construction</a>
+                    <a class="hover:underline hover:text-red-500 duration-500"
+                        href="{{ route('privacy_policy') }}">Privacy Policy</a>
                 </div>
             </div>
             <div class="md:w-[20%]">
@@ -192,9 +207,9 @@
             </div>
             <div class="md:w-[20vw] flex flex-col justify-center w-full lg:w-auto">
                 <a href="{{ route('home') }}">
-                    <img class="w-80" src="{{ asset('assets/static/kamakhya_logo.png') }}" alt="">
+                    <img class="w-40 md:w-80" src="{{ asset('assets/static/kamakhya_logo.png') }}" alt="">
                 </a>
-                <p class="pl-16 pt-2">A unit of <a href="{{ route('home') }}">Kamakhya Group</a></p>
+                <p class="md:pl-16 pt-2">A unit of <a href="{{ route('home') }}">Kamakhya Group</a></p>
                 <div class="pl-8 flex gap-2 justify-center py-2">
                     <a class="flex items-center gap-2 hover:underline hover:text-red-500 duration-500" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
