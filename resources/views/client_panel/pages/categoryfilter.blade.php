@@ -40,9 +40,9 @@
                             <div data-aos="fade-up" class="p-4">
                                 <div
                                     class="group h-full border-2 border-red-500 border-opacity-60 rounded-lg overflow-hidden">
-                                    <div class="relative flex justify-center overflow-hidden bg-gradient-to-r from-zinc-800 via-zinc-300 to-zinc-800">
+                                    <div class="relative flex justify-center overflow-hidden bg-gradient-to-r from-teal-800 via-teal-300 to-teal-800">
                                         @if (strlen($value->img) > 0)
-                                            <img class="h-96 rounded-lg group-hover:scale-110 duration-500"
+                                            <img class="h-96 rounded-lg contrast-125 group-hover:scale-110 duration-500"
                                                 src="{{ asset('assets/uploads/products/' . $value->img) }}"
                                                 alt="">
                                         @else
