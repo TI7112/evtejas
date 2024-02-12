@@ -169,7 +169,7 @@
                         </svg>
                         <p class="flex flex-wrap">
                             <a class="hover:underline hover:text-red-500 duration-500"
-                                href="tel:+919870368567">+91-9870368567</a>
+                                href="tel:+918527124824">+91-8527124824</a>
                         </p>
                     </div>
                     <div class="flex items-start gap-2">

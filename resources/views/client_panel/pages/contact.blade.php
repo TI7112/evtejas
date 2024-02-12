@@ -42,7 +42,7 @@
                             </div>
                             <div class="">
                                 <p class="text-2xl font-bold font-mono">Call</p>
-                                <a href="tel:+9105223166636" class="font-mono font-semibold text-zinc-400">+91 0522-3166636</a>
+                                <a href="tel:+918527124824" class="font-mono font-semibold text-zinc-400">+91 8527124824</a>
                             </div>
                         </div>
                     </div>
