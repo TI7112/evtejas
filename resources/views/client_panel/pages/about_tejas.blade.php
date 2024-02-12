@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    <div class="bg-zinc-900 w-full min-h-screen pb-10 md:px-20 ">
+    <div class="bg-zinc-900 w-full min-h-screen pb-10 md:px-20 "> 
 
 
         <div class="flex flex-col md:pt-[4rem] justify-evenly items-center lg:flex-row">
@@ -168,7 +168,7 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in-up" class="group cursor-pointer w-[100%] md:w-[30%] bg-zinc-800 rounded-xl">
+                    {{-- <div data-aos="zoom-in-up" class="group cursor-pointer w-[100%] md:w-[30%] bg-zinc-800 rounded-xl">
                         <div class="rounded-xl overflow-hidden relative">
                             <img class="w-full h-full" src="{{ asset('assets/static/vivek_sir.png') }}" alt="">
                             <div class="min-h-full group-hover:bg-[rgba(0,0,0,0.8)] duration-300 p-5 absolute top-0 flex items-center">
@@ -217,7 +217,7 @@
                             <p class=""> CHAIRMAN </p>
                             <p class="">Mr. Sunil Kumar</p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
             </div>
