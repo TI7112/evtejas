@@ -223,14 +223,6 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
         <div class="px-3 md:px-10">
             <div class="w-full md:h-96 p-4 py-10 flex justify-center">
                 <div class="bg-zinc-800 rounded-xl">
